@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InputHandler : MonoBehaviour
 {
-
+    //Variables
     public float horizontal;
     public float vertical;
     public float moveAmount;
@@ -17,7 +17,7 @@ public class InputHandler : MonoBehaviour
     Vector2 cameraInput;
 
     public void OnEnable()
-    {
+    {//Lambda Function
         if(inputActions == null)
         {
             inputActions = new PlayerControls();
@@ -36,7 +36,7 @@ public class InputHandler : MonoBehaviour
     {
         MoveInput(delta);
     }
-
+    //update
     private void MoveInput(float delta)
     {
         horizontal = movementInput.x;
