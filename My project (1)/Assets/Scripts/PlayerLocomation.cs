@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerLocomation : MonoBehaviour
-{
+{//Variables
     Transform cameraObject;
     InputHandler inputHandler;
     Vector3 moveDirection;
@@ -12,7 +12,7 @@ public class PlayerLocomation : MonoBehaviour
 
     public new Rigidbody rigidbody;
     public GameObject normalCamera;
-
+    //header creator
     [Header("Stats")]
     [SerializeField]
     float movementSpeed = 5;
@@ -26,7 +26,7 @@ public class PlayerLocomation : MonoBehaviour
         cameraObject = Camera.main.transform;
         myTransform = transform;
     }
-
+    //update
 
     void Update()
     {
