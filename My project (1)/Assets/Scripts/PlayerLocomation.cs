@@ -27,8 +27,13 @@ public class PlayerLocomation : MonoBehaviour
         myTransform = transform;
     }
 
-    void Update()
+    #region Movement
+    Vector3 normalVector;
+    Vector3 targetPosition;
+
+    private void HandleRotation(float delta)
     {
-        
+
     }
+    #endregion
 }
